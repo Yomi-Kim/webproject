@@ -236,7 +236,7 @@ $(document).ready(function() {
     function init() {
       var mapOptions = {
         zoom: 11,
-        center: new google.maps.LatLng(40.67, -73.94), // New York
+        center: new google.maps.LatLng(35.190558, 129.087067), // 회계사무소 좌표
         styles: [
           {
             featureType: "water",
@@ -417,7 +417,7 @@ $(document).ready(function() {
       var mapElement = document.getElementById("map");
       var map = new google.maps.Map(mapElement, mapOptions);
       var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.67, -73.94),
+        position: new google.maps.LatLng(35.190558, 129.087067),
         map: map,
         title: "Snazzy!"
       });

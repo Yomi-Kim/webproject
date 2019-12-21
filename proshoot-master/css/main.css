@@ -4,7 +4,7 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 /* =================================== */
-/*  Basic Style 
+/*  Basic Style
 /* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
@@ -2200,6 +2200,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-area {
   background: url(../img/banner/common-banner.jpg) no-repeat;
+  background-size: 100% 150%;
   background-size: cover;
   position: relative; }
   .banner-area:after {
