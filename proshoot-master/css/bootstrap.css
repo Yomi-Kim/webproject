@@ -563,6 +563,11 @@ mark,
   height: auto;
 }
 
+.img-service {
+  max-width: 150%;
+  height : auto;
+}
+
 /* line 14, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/_images.scss */
 .img-thumbnail {
   padding: 0.25rem;
