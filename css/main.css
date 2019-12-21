@@ -763,7 +763,8 @@ th {
       padding: 70px 0; } }
 
 .section-gap-top {
-  padding-top: 140px; }
+  padding-top: 20px;
+  margin-left: 20px; }  
   @media (max-width: 991px) {
     .section-gap-top {
       padding: 70px 0; } }
@@ -2125,10 +2126,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f7f7f7;
   position: relative; }
   .home-banner-area .fullscreen {
-    height: 788px; }
+    height: 300px; }
     @media (max-width: 1024px) {
       .home-banner-area .fullscreen {
-        height: 600px; } }
+        height: 300px; } }
   .home-banner-area .container-fluid {
     padding-left: 21%; }
     @media (max-width: 1480px) {
@@ -2233,7 +2234,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-img {
   text-align: right;
   position: relative;
-  top: -30px;
+  top: 0px;
   padding-right: 0px;
   -ms-flex-item-align: end;
   align-self: flex-end; }
