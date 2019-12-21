@@ -614,6 +614,13 @@ th {
   top: 0;
   bottom: 0; }
 
+.homebanner {
+ 
+  height: 200px;
+  margin-left:120px;
+  margin-right:120px;
+}  
+
 .container.fullwidth {
   width: 100%; }
 .container.no-padding {
