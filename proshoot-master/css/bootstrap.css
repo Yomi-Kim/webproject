@@ -800,6 +800,10 @@ pre code {
     max-width: 100%;
 }
 
+.follow {
+    justify-content: right;
+}
+
 /* line 36, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/mixins/_grid-framework.scss */
 .col-auto {
     flex: 0 0 auto;
