@@ -699,7 +699,7 @@ pre code {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px;
+    margin-left: 10px;
 }
 
 /* line 34, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/_grid.scss */
@@ -1207,12 +1207,14 @@ pre code {
     .col-md-3 {
         flex: 0 0 25%;
         max-width: 25%;
+        margin-bottom: 50px;
     }
 
     /* line 43, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/mixins/_grid-framework.scss */
     .col-md-4 {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
+        padding-bottom: 50px;
     }
 
     /* line 43, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/mixins/_grid-framework.scss */
