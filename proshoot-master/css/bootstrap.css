@@ -458,6 +458,7 @@ h6, .h6 {
 .h2class{
   font-family: "Do Hyeon", sans-serif;
   margin-left: -2.5em;
+  margin-bottom: 10px;
 }
 
 .faq-color{
@@ -577,6 +578,12 @@ mark,
 .img-fluid {
     max-width: 100%;
     height: auto;
+}
+
+.img-q {
+    max-width: 100%;
+    height: auto;
+    padding-top: 100%;
 }
 
 .img-faq {
