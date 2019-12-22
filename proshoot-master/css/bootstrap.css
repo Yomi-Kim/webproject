@@ -460,10 +460,6 @@ h6, .h6 {
   margin-left: -2.5em;
   margin-bottom: 10px;
 }
-.h3class{
-  font-family: "Do Hyeon", sans-serif;
-  margin-bottom: 3px;
-}
 
 .faq-color{
   font-family: "Do Hyeon", sans-serif;
@@ -802,6 +798,10 @@ pre code {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
+}
+
+.follow {
+    justify-content: right;
 }
 
 /* line 36, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/mixins/_grid-framework.scss */
@@ -10655,13 +10655,6 @@ button.bg-dark:focus {
 /* line 22, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/utilities/_text.scss */
 .text-right {
     text-align: right !important;
-}
-.footer-text-right {
-    text-align: right !important;
-    margin-right: -3em;
-}
-.footer-text-right, .text-right{
-  margin:0.1em;
 }
 
 /* line 23, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/utilities/_text.scss */

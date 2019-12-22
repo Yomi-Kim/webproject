@@ -3815,7 +3815,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .top-category-widget-area .single-cat-widget:hover .overlay-bg {
-    background: rgba(0, 25, 88, 0.85);
+    background: rgba(248, 28, 28, 0.85);
     margin: 7%;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;

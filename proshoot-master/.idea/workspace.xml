@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650899ec-783e-4fb8-879e-90c02c72b0ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chameleon-admin-master/form-elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/chameleon-admin-master/form-elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chameleon-admin-master/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chameleon-admin-master/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chameleon-admin-master/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/chameleon-admin-master/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chameleon-admin-master/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/chameleon-admin-master/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/elements.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/pricing.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577029781006</updated>
-      <workItem from="1577029783522" duration="2473000" />
-      <workItem from="1577050879170" duration="1220000" />
+      <workItem from="1577029783522" duration="956000" />
     </task>
     <servers />
   </component>
