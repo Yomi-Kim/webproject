@@ -2,10 +2,10 @@ $(document).ready(function() {
   "use strict";
 
   var window_width = $(window).width(),
-    window_height = window.innerHeight,
-    header_height = $(".default-header").height(),
-    header_height_static = $(".site-header.static").outerHeight(),
-    fitscreen = window_height - header_height;
+      window_height = window.innerHeight,
+      header_height = $(".default-header").height(),
+      header_height_static = $(".site-header.static").outerHeight(),
+      fitscreen = window_height - header_height;
 
   //   $(".fullscreen").css("height", window_height);
   $(".fitscreen").css("height", fitscreen);
@@ -47,8 +47,8 @@ $(document).ready(function() {
   //------- Pre Loader --------//
   $(window).on("load", function() {
     $(".preloader-area")
-      .delay(200)
-      .fadeOut(500);
+        .delay(200)
+        .fadeOut(500);
   });
 
   //------- Lightbox  js --------//
@@ -114,31 +114,31 @@ $(document).ready(function() {
 
   if ($("#nav-menu-container").length) {
     var $mobile_nav = $("#nav-menu-container")
-      .clone()
-      .prop({
-        id: "mobile-nav"
-      });
+        .clone()
+        .prop({
+          id: "mobile-nav"
+        });
     $mobile_nav.find("> ul").attr({
       class: "",
       id: ""
     });
     $("body").append($mobile_nav);
     $("body").prepend(
-      '<button type="button" id="mobile-nav-toggle"><i class="ti-menu"></i></button>'
+        '<button type="button" id="mobile-nav-toggle"><i class="ti-menu"></i></button>'
     );
     $("body").append('<div id="mobile-body-overly"></div>');
     $("#mobile-nav")
-      .find(".menu-has-children")
-      .prepend('<i class="ti-angle-down"></i>');
+        .find(".menu-has-children")
+        .prepend('<i class="ti-angle-down"></i>');
 
     $(document).on("click", ".menu-has-children i", function(e) {
       $(this)
-        .next()
-        .toggleClass("menu-item-active");
+          .next()
+          .toggleClass("menu-item-active");
       $(this)
-        .nextAll("ul")
-        .eq(0)
-        .slideToggle();
+          .nextAll("ul")
+          .eq(0)
+          .slideToggle();
       $(this).toggleClass("ti-angle-up ti-angle-down");
     });
 
@@ -173,15 +173,12 @@ $(document).ready(function() {
       var target = $(this.hash);
       if (target.length) {
         var top_space = 0;
-
         if ($("#header").length) {
           top_space = $("#header").outerHeight();
-
           if (!$("#header").hasClass("header-fixed")) {
             top_space = top_space;
           }
         }
-
         $("html, body").animate(
           {
             scrollTop: target.offset().top - top_space
@@ -189,14 +186,12 @@ $(document).ready(function() {
           1500,
           "easeInOutExpo"
         );
-
         if ($(this).parents(".nav-menu").length) {
           $(".nav-menu .menu-active").removeClass("menu-active");
           $(this)
             .closest("li")
             .addClass("menu-active");
         }
-
         if ($("body").hasClass("mobile-nav-active")) {
           $("body").removeClass("mobile-nav-active");
           $("#mobile-nav-toggle i").toggleClass("ti-menu ti-menu");
@@ -206,16 +201,13 @@ $(document).ready(function() {
       }
     }
   });
-
   $(document).ready(function() {
     $("html, body").hide();
-
     if (window.location.hash) {
       setTimeout(function() {
         $("html, body")
           .scrollTop(0)
           .show();
-
         $("html, body").animate(
           {
             scrollTop: $(window.location.hash).offset().top - 108
@@ -236,7 +228,7 @@ $(document).ready(function() {
     function init() {
       var mapOptions = {
         zoom: 11,
-        center: new google.maps.LatLng(40.67, -73.94), // New York
+        center: new google.maps.LatLng(35.190558, 129.087067), // 회계사무소 좌표
         styles: [
           {
             featureType: "water",
@@ -417,7 +409,7 @@ $(document).ready(function() {
       var mapElement = document.getElementById("map");
       var map = new google.maps.Map(mapElement, mapOptions);
       var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.67, -73.94),
+        position: new google.maps.LatLng(35.190558, 129.087067),
         map: map,
         title: "Snazzy!"
       });
@@ -428,7 +420,7 @@ $(document).ready(function() {
 
   $(document).ready(function() {
     $("#mc_embed_signup")
-      .find("form")
-      .ajaxChimp();
+        .find("form")
+        .ajaxChimp();
   });
 });
