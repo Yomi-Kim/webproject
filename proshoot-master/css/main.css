@@ -1710,11 +1710,24 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 50px;
 }
 
+.progress-table .pos {
+    width: 28.07%;
+}
+
+.progress-table .name {
+    width: 19.74%;
+}
+
+.progress-table .content {
+    width: 40.36%;
+    padding-right: 50px;
+}
+
 .progress-table .table-head {
     display: flex;
 }
 
-.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage {
+.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .pos, .progress-table .table-head .name, .progress-table .table-head .content, .progress-table .table-head .visit, .progress-table .table-head .percentage {
     color: #242429;
     line-height: 40px;
     text-transform: uppercase;
@@ -1727,7 +1740,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
 }
 
-.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage {
+.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .pos, .progress-table .table-row .name, .progress-table .table-row .content, .progress-table .table-row .visit, .progress-table .table-row .percentage {
     display: flex;
     align-items: center;
 }
@@ -2504,7 +2517,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header {
     padding: 0px 0px 27px 0px;
-    position: relative;
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
