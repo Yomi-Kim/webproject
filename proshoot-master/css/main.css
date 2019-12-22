@@ -150,6 +150,16 @@ h6 {
     color: #242429;
 }
 
+.overlay{
+  &:hover {
+      opacity: 1;
+    img {
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+    }
+  }
+}
+
 h1,
 .h1 {
     font-size: 36px;
@@ -3719,6 +3729,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 130px 0px;
 }
 
+
 .blog-home-banner .primary-btn {
     border-radius: 0px;
     background: #fff;
@@ -3802,7 +3813,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .top-category-widget-area .single-cat-widget:hover .overlay-bg {
-    background: rgba(248, 28, 28, 0.85);
+    background: rgba(26, 11, 158, 0.85);
     margin: 7%;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
