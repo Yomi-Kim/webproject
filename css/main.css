@@ -615,7 +615,6 @@ th {
   bottom: 0; }
 
 .homebanner {
- 
   height: 200px;
   margin-left:120px;
   margin-right:120px;
@@ -2544,8 +2543,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0px; }
 
 .about-content {
-  margin-top: 160px;
-  margin-bottom: 130px;
+  margin-top: 30px;
+  margin-bottom: 70px;
   position: relative;
   z-index: 10;
   text-align: center; }
@@ -2553,12 +2552,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     .about-content {
       margin-top: 100px; } }
   .about-content h1 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 10px; }
     @media (max-width: 767px) {
       .about-content h1 {
-        font-size: 35px; } }
+        font-size: 30px; } }
   .about-content p {
     margin-bottom: 0px;
     color: #fff; }
