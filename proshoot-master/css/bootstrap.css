@@ -458,6 +458,7 @@ h6, .h6 {
 .h2class{
   font-family: "Do Hyeon", sans-serif;
   margin-left: -2.5em;
+  margin-bottom: 10px;
 }
 
 .faq-color{
@@ -579,10 +580,15 @@ mark,
     height: auto;
 }
 
+.img-q {
+    max-width: 100%;
+    height: auto;
+    padding-top: 100%;
+}
+
 .img-faq {
     max-width: 80%;
     margin-top: -50%;
-    border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
 }
 
 .img-service {
@@ -736,7 +742,7 @@ pre code {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: 5px;
-    margin-top : -20%;
+    margin-top : -25%;
     margin-bottom : 10%;
 }
 

@@ -7,16 +7,11 @@ $(document).ready(function() {
       header_height_static = $(".site-header.static").outerHeight(),
       fitscreen = window_height - header_height;
 
-  var img_height = image.height;
-
   //   $(".fullscreen").css("height", window_height);
   $(".fitscreen").css("height", fitscreen);
 
   //------- Wow JS Initialized --------//
   new WOW().init();
-
-
-
 
   //------- Go to Top --------//
   //------- Header Scroll Class  js --------//
@@ -42,22 +37,6 @@ $(document).ready(function() {
     );
     return false;
   });*/
-  function hide() {
-    $("#hh").hide();                            // 숨기기. 영역도 같이 사라짐.
-}
-  function show() {
-    $("#hh").show();                            // 나타내기. 영역도 같이 나타남.
-}
-
-
-
-
-  if( img_height < 100){
-    hide();
-  }
-  else{
-    show();
-  }
 
   //------- Niceselect  js --------//
 
