@@ -455,6 +455,22 @@ h6, .h6 {
     font-size: 1rem;
 }
 
+.h2class{
+  font-family: "Do Hyeon", sans-serif;
+  margin-left: -2.5em;
+}
+
+.faq-color{
+  font-family: "Do Hyeon", sans-serif;
+  color: #6E6E6E;
+}
+
+.center-align{
+  font-family: "Do Hyeon", sans-serif;
+  color: #610B21;
+  text-align: center;
+}
+
 /* line 23, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/_type.scss */
 .lead {
     font-size: 1.25rem;
