@@ -83,44 +83,41 @@
     <div class="row">
         <div class="col-lg-8 col-md-8">
             <h3 class="mb-30">1:1 문의 접수</h3>
-            <form action="#">
+            <form action="">
                 <div class="mt-10">
-                    <input type="text" name="first_name" placeholder="이름" onfocus="this.placeholder = ''"
+                    <input type="text" id="first_name" placeholder="이름" onfocus="this.placeholder = ''"
                            onblur="this.placeholder = 'First Name'"
                            required class="single-input">
                 </div>
                 <div class="mt-10">
-                    <input type="text" name="last_name" placeholder="성" onfocus="this.placeholder = ''"
+                    <input type="text" id="last_name" placeholder="성" onfocus="this.placeholder = ''"
                            onblur="this.placeholder = 'Last Name'"
                            required class="single-input">
                 </div>
                 <div class="input-group-icon mt-10">
                     <div class="icon"><i class="ti-email" aria-hidden="true"></i></div>
-                    <input type="email" name="EMAIL" placeholder="이메일 주소" onfocus="this.placeholder = ''"
+                    <input type="email" id="EMAIL" placeholder="이메일 주소" onfocus="this.placeholder = ''"
                            onblur="this.placeholder = 'Email address'"
                            required class="single-input">
                 </div>
                 <div class="input-group-icon mt-10">
                     <div class="icon"><i class="ti-apple" aria-hidden="true"></i></div>
-                    <input type="text" name="address" placeholder="연락처" onfocus="this.placeholder = ''"
+                    <input type="text" id="address" placeholder="연락처" onfocus="this.placeholder = ''"
                            onblur="this.placeholder = 'Address'"
                            required class="single-input">
                 </div>
                 <div class="mt-10">
-								<textarea class="single-textarea" placeholder="상담 내용" onfocus="this.placeholder = ''"
+								<textarea id="textarea" class="single-textarea" placeholder="상담 내용" onfocus="this.placeholder = ''"
                                           onblur="this.placeholder = 'Message'"
                                           required></textarea>
                 </div>
-
-                <div class="button-group-area button-option">
-                    <a href="#" class="genric-btn link">제출</a>
-                </div>
+                    <button type="submit" id="button1" class="btn btn-primary">제출</input>
+            
             </form>
         </div>
     </div>
 </div>
 
-<!-- start footer Area -->
 <!-- start footer Area -->
 <footer class="footer-area section-gap">
     <div class="container">
@@ -212,13 +209,74 @@
     </div>
 </footer>
 <!-- End footer Area -->
-
 <!-- ####################### Start Scroll to Top Area ####################### -->
 <div id="back-top">
     <a title="Go to Top" href="#"> <i class="ti-angle-double-up"></i> </a>
 </div>
 <!-- ####################### End Scroll to Top Area ####################### -->
 
+
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+
+<script>
+
+
+    var config = {
+    apiKey:"AIzaSyCfZhQE5okMhWiP1YnkTZlOY6ebO8_1D3Y",
+    authDomain:"jowebproject.firebaseapp.com",
+    databaseURL:"https://jowebproject.firebaseio.com",
+    projectId:"jowebproject",
+    storageBucket:"jowebproject.appspot.com",
+    messagingSenderId:"539807158677"
+    };
+
+    firebase.initializeApp(config);
+    
+    var d = new Date();
+    var t = d.getTime();
+    var counter =t;
+
+
+    var b = document.getElementById("button1");
+    
+    b.addEventListener('click',(e)=>{
+
+    var fname = document.getElementById("first_name").value;
+    var lname = document.getElementById("last_name").value;
+    var mail = document.getElementById("EMAIL").value;
+    var address = document.getElementById("address").value;
+    var textarea = document.getElementById("textarea").value;
+
+    e.preventDefault();
+    createreq(fname,lname,mail,address,textarea);
+        alert("접수완료");
+});
+
+
+    function createreq(Fname,Lname,Mail,Address,Textarea){
+        counter+=1;
+
+
+        var data={
+            id:counter,
+            fname : Fname,
+            lname : Lname,
+            mail : Mail,
+            address : Address,
+            textarea : Textarea   
+        }
+        let datab = firebase.database().ref("data/"+counter);
+        datab.set(data);
+    }
+
+  
+    </script>
+
+
+<!-- fffffffffffffffff -->
 <script src="js/vendor/jquery-2.2.4.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script
