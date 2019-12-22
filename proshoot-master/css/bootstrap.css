@@ -573,6 +573,11 @@ mark,
     height: auto;
 }
 
+.img-elements {
+    max-width : 80%;
+    height: auto;
+}
+
 /* line 14, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/_images.scss */
 .img-thumbnail {
     padding: 0.25rem;
@@ -699,7 +704,23 @@ pre code {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: 10px;
+    margin-left: -15px;
+}
+
+.row-ele {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 5px;
+}
+
+.row-index {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 5px;
+    margin-top : -20%;
+    margin-bottom : 10%;
 }
 
 /* line 34, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/_grid.scss */
@@ -728,6 +749,18 @@ pre code {
     padding-right: 15px;
     padding-left: 15px;
 }
+
+.col-index {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+
 
 .faq {
     margin-top: 100px;
@@ -1424,8 +1457,8 @@ pre code {
 
     /* line 43, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/mixins/_grid-framework.scss */
     .col-lg-2 {
-        flex: 0 0 16.66667%;
-        max-width: 16.66667%;
+        flex: 0 0 20%;
+        max-width: 20%;
     }
 
     /* line 43, /Applications/MAMP/htdocs/naim/color-lib/144 Proshoot Photography/scss/bootstrap/mixins/_grid-framework.scss */
