@@ -56,9 +56,9 @@
                         </ul>
                     </li>
                     <li><a class="active" href="pricing.html">서비스 안내</a></li>
-                    <li class="menu-has-children"><a href="#">고객센터</a>
+                    <li class="menu-has-children"><a href="about.html">고객센터</a>
                         <ul>
-                            <li><a href="blog-single.html">공지사항</a></li>
+                            <li><a href="about.html">공지사항</a></li>
                             <li><a href="blog-single.html">FAQ</a></li>
                             <li><a href="blog-home.html">1:1 문의</a></li>
                         </ul>
@@ -162,6 +162,7 @@
 </div>
 
 <!-- start footer Area -->
+<!-- start footer Area -->
 <footer class="footer-area section-gap">
     <div class="container">
         <div class="row">
@@ -171,33 +172,65 @@
                     <p>
                         고객님의 소중한 자산을 지켜드리겠습니다.
                     </p>
+
+
                 </div>
             </div>
-            <div class="col-lg-5  col-md-6 col-sm-6">
+            <div class="col-lg-5  col-md-6 col-sm-6 footer-text-right">
                 <div class="single-footer-widget">
-                    <h6>Newsletter</h6>
-                    <p>Stay update with our latest</p>
-                    <div class="" id="mc_embed_signup">
-                        <form target="_blank" novalidate="true"
-                              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                              method="get" class="form-inline">
-                            <input class="form-control" name="EMAIL" placeholder="Email Address"
-                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'"
-                                   required="" type="email">
-                            <button class="click-btn btn btn-default"><i class="ti-arrow-right" aria-hidden="true"></i>
-                            </button>
-                            <div style="position: absolute; left: -5000px;">
-                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                            </div>
-                            <div class="info"></div>
-                        </form>
-                    </div>
+                    <h6 class="h3class">카카오톡 메세지로 전송하기(위치)</h6>
+                    <a id="kakao-link-btn" href="javascript:;">
+                        <img  onClick="shareKakaotalk();" src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+                        <!-- <input type="button" onClick="shareKakaotalk();" value="KAKOA Talk으로 공유하기"/> -->
+                    </a>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
                 <div class="single-footer-widget">
                     <h6>Follow Us</h6>
                     <p>Tel. (051) 867 - 5417<br>Fax. (051) 867 - 5419</p>
+
+                    <div class="d-flex align-items-center">
+                        <a href="login.html"><p>관리자 페이지 바로가기</p></a>
+                    </div>
+                    <!-- 카카오톡 버튼 만들기 -->
+
+                    <br><br>
+                    <script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+                    <script type="text/javascript">
+                        function shareKakaotalk() {
+                            Kakao.init("9aa1cf3eaeda2849e6f582dd60a63107");      // 사용할 앱의 JavaScript 키를 설정
+                            Kakao.Link.sendDefault({
+                                objectType:"location"
+                                , address:"부산광역시 연제구 반송로 69 하이트빌딩 6층"    // 공유할 위치의 주소
+                                , addressTitle:"얼음왕관의 성채"   // 카카오톡 내의 지도 뷰에서 사용되는 타이틀
+                                , content: {
+                                    title:"이종순 공인회계사무소"   // 콘텐츠의 타이틀
+                                    , description:"#세무회계 #세무기장 #세금계산 #회계감사 #기업진단"  // 콘텐츠 상세설명
+                                    , imageUrl:"img/square_KICPA.png"    // 썸네일 이미지
+                                    , link: {
+                                        mobileWebUrl:"http://ljs-Accountants.com"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
+                                        , webUrl:"http://localhost:8080/kakao/index.html" // PC버전 카카오톡에서 사용하는 웹 링크 URL
+                                    }
+                                }
+                                , social: {
+                                    likeCount:0       // LIKE 개수
+                                    , commentCount:0    // 댓글 개수
+                                    , sharedCount:0     // 공유 회수
+                                }
+                                , buttons: [
+                                    {
+                                        title:"위치 보기" // 버튼 제목
+                                        , link: {
+                                            mobileWebUrl:"http://magic.wickedmiso.com/"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
+                                            , webUrl:"http://magic.wickedmiso.com/" // PC버전 카카오톡에서 사용하는 웹 링크 URL
+                                        }
+                                    }
+                                ]
+                            });
+                        }
+                    </script>
+
                     <div class="footer-social d-flex align-items-center">
                         <a href="#"><i class="ti-facebook"></i></a>
                         <a href="#"><i class="ti-twitter"></i></a>
